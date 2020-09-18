@@ -2,14 +2,14 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>TAB ONE</ion-title>
+        <ion-buttons slot="start">
+          <button @click="router.back">back</button>
+        </ion-buttons>
+        <ion-title>TAB ONE DETAIL</ion-title>
       </ion-toolbar>
     </ion-header>
 
-    <ion-content :fullscreen="true">
-      <ion-button @click="router.push({path:'one/one-detail'})">DETAIL PAGE</ion-button>
-      <ion-button @click="router.replace({path:'/login'})">LOGOUT</ion-button>
-    </ion-content>
+    <ion-content :fullscreen="true"></ion-content>
   </ion-page>
 </template>
 
@@ -24,7 +24,7 @@ import {
 import { defineComponent } from "vue";
 import { useRouter } from "vue-router";
 export default defineComponent({
-  name: "Home",
+  name: "TabOneDetail",
   components: {
     IonContent,
     IonHeader,
