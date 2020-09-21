@@ -3,7 +3,8 @@
     <ion-header :translucent="true">
       <ion-toolbar>
         <ion-buttons slot="start">
-          <button @click="router.back">back</button>
+          <!-- <button @click="router.back">back</button> -->
+          <ion-back-button />
         </ion-buttons>
         <ion-title>TAB ONE DETAIL</ion-title>
       </ion-toolbar>
@@ -20,6 +21,7 @@ import {
   IonPage,
   IonTitle,
   IonToolbar,
+  IonBackButton,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 import { useRouter } from "vue-router";
@@ -31,6 +33,7 @@ export default defineComponent({
     IonPage,
     IonTitle,
     IonToolbar,
+    IonBackButton,
   },
   setup() {
     return {
